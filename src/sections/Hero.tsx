@@ -33,7 +33,7 @@ export const HeroSection = () => {
               I am <span className="text-emerald-400 font-serif">Abhishek</span>
             </h1>
             <p className="mt-4 text-center text-white/60 md:text-lg">
-              I specialize in transforming designs into functional, high performing web applications. Let's discuss your next project.
+              I specialize in transforming designs into functional, high performing web applications. Let&apos;s discuss your next project.
             </p>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -43,7 +43,7 @@ export const HeroSection = () => {
             </a>
             <a href="#about" className="z-40 inline-flex items-center border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
               <span>👋</span>
-              <span className="font-semibold">Let's Connect</span>
+              <span className="font-semibold">Let&apos;s Connect</span>
             </a>
           </div>
         </div>

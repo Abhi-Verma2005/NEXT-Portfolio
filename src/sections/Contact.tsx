@@ -48,7 +48,7 @@ export const ContactSection = () => {
               <StarIcon className="size-8 text-emerald-300" />
               <h2 className="font-serif text-3xl">Contact Me</h2>
             </div>
-            <p className="text-sm mt-1 text-white/60">Let's collaborate and make something out of it!!</p>
+            <p className="text-sm mt-1 text-white/60">Let&apos;s collaborate and make something out of it!!</p>
             <div className="flex flex-col mt-4 justify-center items-center">
               {languages.map((item) => (
                 <div key={item.name} className="inline-flex md:my-4 gap-4 m-1 items-center py-2 px-3 border-2 border-white/10 rounded-lg">
