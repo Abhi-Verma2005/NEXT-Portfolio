@@ -1,46 +1,160 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import Clustr from "@/assets/images/Clustr.png";
+import superCarBlog from "@/assets/images/super.png";
+import portfolio from "@/assets/images/portfolio.png";
+import chat from "@/assets/images/chatapp.png";
+import Image from "next/image";
+import React from "react";
+import CheckIcon from "@/assets/icons/check-circle.svg";
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import Reactt from "@/assets/icons/react.svg"
+import PostgreSQL from "@/assets/icons/postgresql.svg";
+import Prisma from "@/assets/icons/Prisma.svg";
+import Next from "@/assets/icons/icons8-nextjs.svg"
+import Websocket from "@/assets/icons/websocket.svg"
+import tailwind from "@/assets/icons/tailwind.svg"
+import typescript from "@/assets/icons/typescript.svg"
+import { TechIcon } from "@/components/TechIcon";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    name: "Clustr",
+    year: "2024",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Learned NEXT.js" },
+      { title: "Image uploads, Post making" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    description: "A social media app!",
+    link: "https://clustr-sable.vercel.app/",
+    image: Clustr,
+    stack: [
+    { name: "PostgreSQL", iconType: PostgreSQL  },
+    { name: "NEXT.js", iconType: Next  },
+    ]
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    name: "Chatmon",
+    year: "2024",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Learned native Websockets" },
+      { title: "Image uploads, Post making, auth" },
+      { title: "Github 3D globe using AceternityUI" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    description: "A real time chat application",
+    link: "https://blog-website-car.netlify.app/",
+    image: chat,
+    stack: [
+      { name: "Websockets", iconType: Websocket  },
+      { name: "Typescript", iconType: typescript  },
+    ]
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    name: "CarBlog",
+    year: "2024",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Learned React.js" },
+      { title: "Image uploads, Post making, auth" },
+      { title: "Multiple themes using DaisyUi" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    description: "A blog app for super cars!",
+    link: "https://blog-website-car.netlify.app/",
+    image: superCarBlog,
+    stack: [
+      { name: "React.js", iconType: Reactt  },
+      { name: "Tailwind", iconType: tailwind  },
+    ]
+  },
+  {
+    name: "Portfolio",
+    year: "2024",
+    results: [
+      { title: "Learned tailwind Styling" },
+      { title: "Learned writing clean code" },
+    ],
+    description: "A blog app for super cars!",
+    link: "https://blog-website-car.netlify.app/",
+    image: portfolio,
+    stack: [
+      { name: "Typescript", iconType: typescript  },
+      { name: "NEXT.js", iconType: Next  },
+    ]
   },
 ];
 
 export const ProjectsSection = () => {
-  return <div>Projects Section</div>;
+  return (
+    
+    <section id="project" className="pb-16 lg:py-24">
+      <div className="container">
+        <div className="flex justify-center">
+          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from bg-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
+            Real-world Results
+          </p>
+        </div>
+        <h2 className="font-serif text-3xl text-center md:text-5xl mt-6">
+          Featured Projects
+        </h2>
+        <p className="text-center md:text-lg max-wd-md lg:text-lg mx-auto text-white/60 mt-4">
+          See how I transform concept into engaging digital experieces.
+        </p>
+        
+        <div className="flex md:mt-20 flex-col gap-16 mt-10">
+          {portfolioProjects.map((project, projectIndex) => (
+            <div
+              key={project.name}
+              className="bg-gray-800 border-2 border-white/10 sticky top-16 md:pt-12 lg:pt-16 lg:px-20 md:px-10 rounded-3xl relative after:content-[''] z-0 after:z-10 overflow-hidden after:absolute after:inset-0 after:outline-2 after:outline after:outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none"
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px)`
+              }}
+            >
+              
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+                  <div className="lg:pb-16">
+                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 bg-clip-text text-transparent p-8">
+                      <span>{project.name}</span>
+                      <span>&bull;</span>
+                      <span>{project.year}</span>
+                    </div>
+
+                    <div className="md:flex">
+                      <h3 className="m-1 font-serif md:text-4xl md:mt-5 text-2xl mt-2">
+                        {project.name}
+                      </h3>
+                      {project.stack.map((item) => ( // genera
+                      <div key={item.name} className="inline-flex gap-4 m-1 items-center py-2 px-3 border-2 border-white/10 rounded-lg"> 
+                        <TechIcon component={item.iconType}/>
+                        <span>{item.name}</span>
+                      </div>
+                    ))}
+                    </div>
+                    <hr className="border-t-2 border-white/5 mt-4" />
+                    <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                      {project.results.map((result) => (
+                        <li className="flex md:text-base gap-2 text-sm text-white/50">
+                          <CheckIcon className="size-5 md:size-6" />
+                          <span>{result.title}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a href={project.link}>
+                      <button className="bg-white inline-flex items-center gap-2 mt-8 justify-center text-gray-950 h-12 px-6 w-full md:w-auto rounded-xl font-semibold">
+                        <span>Visit Live Site</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </button>
+                    </a>
+                  </div>
+                  <div className="relative">
+                    <Image
+                      className="mt-8 -mb-4 rounded-2xl lg:mt-0 lg:h-full lg:w-auto left-0 lg:max-w-none lg:absolute"
+                      src={project.image}
+                      alt={project.name}
+                    ></Image>
+                  </div>
+                </div>
+              </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
