@@ -1,4 +1,3 @@
-import { BentoGrid } from "@/components/ui/bento-grid";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Header } from "@/sections/Header";
