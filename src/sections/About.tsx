@@ -23,7 +23,6 @@ import linkedin from "@/assets/icons/linkedin.svg"
 import Websocket from "@/assets/icons/websocket.svg"
 import tailwind from "@/assets/icons/tailwind.svg"
 import typescript from "@/assets/icons/typescript.svg"
-import { Fragment } from "react";
 
 export const AboutSection = () => {
   // const languages = ["Html", "CSS", "Javascript", "React.js", "NEXT.js", "MongoDB", "PostgreSQL", "Prisma(ORM)", "AceternityUI", "DaisyUI", "Python", "ShadcnUI"]
