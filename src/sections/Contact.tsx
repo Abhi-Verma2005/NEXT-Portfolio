@@ -66,8 +66,8 @@ export const ContactSection = () => {
             >
               {/* Name Field */}
               <div className="flex flex-col">
-                <label htmlFor="name" className="text-sm font-medium">
-                  Name
+                <label htmlFor="name" className="text-sm font-medium mb-2">
+                  Name:
                 </label>
                 <input
                   type="text"
@@ -81,8 +81,8 @@ export const ContactSection = () => {
 
               {/* Email Field */}
               <div className="flex flex-col">
-                <label htmlFor="email" className="text-sm font-medium">
-                  Email
+                <label htmlFor="email" className="text-sm font-medium mb-2">
+                  Email:
                 </label>
                 <input
                   type="email"
@@ -96,8 +96,8 @@ export const ContactSection = () => {
 
               {/* Message Field */}
               <div className="flex flex-col">
-                <label htmlFor="message" className="text-sm font-medium">
-                  Message
+                <label htmlFor="message" className="text-sm font-medium mb-2">
+                  Message:
                 </label>
                 <textarea
                   name="message"

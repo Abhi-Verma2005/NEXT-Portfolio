@@ -68,7 +68,7 @@ export const AboutSection = () => {
                     <p className="text-sm text-white/60">Explore the Book which is My favourite</p>
                 </div>
                 <div className="flex justify-center">
-                  <Image className="size-[200px] mt-2 rounded-lg" src={pfp} alt="me"></Image>
+                  <Image className="object-contain w-40 mt-2 rounded-lg" src={pfp} alt="me"></Image>
                 </div>
             </Card>
             <Card className="h-[500px] md:h-[360px] md:mb-0 mb-8 md:col-span-3 border-2 border-white/10">
