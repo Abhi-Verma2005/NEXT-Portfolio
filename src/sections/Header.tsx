@@ -6,7 +6,7 @@ export const Header = () => {
       <a className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300" href="#hero">Home</a>
       <a className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300" href="#project">Projects</a>
       <a className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300" href="#about">About</a>
-      <a className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300 bg-white/70 text-gray-900" href="#contact">Contact</a>
+      <a className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300" href="#contact">Contact</a>
     </nav>
   </div>
     </>
