@@ -126,13 +126,13 @@ export const AboutSection = () => {
                   </div>
                 </div>
             </Card>
-            <Card className="border-2 mt-8 flex flex-col md:flex-none h-[360px] col-span-2 border-white/10">
+            <Card className="border-2 flex flex-col md:flex-none h-[360px] col-span-2 border-white/10">
                 <div>
                   <div className="inline-flex items-center gap-2">
                     <StarIcon className="size-8 text-emerald-300"/>
                     <h2 className="font-serif text-3xl">Interests</h2>
                   </div>
-                    <p className="text-sm text-white/60">Explore my education institutions</p>
+                    <p className="text-sm text-white/60">Explore my core interests!</p>
                 </div>
                 <div className="md:flex mt-3 relative">
                   <div className="grid grid-cols-10">
