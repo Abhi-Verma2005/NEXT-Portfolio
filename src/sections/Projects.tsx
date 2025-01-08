@@ -41,7 +41,7 @@ const portfolioProjects = [
       { title: "Github 3D globe using AceternityUI" },
     ],
     description: "A real time chat application",
-    link: "https://blog-website-car.netlify.app/",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7279800412541538304/",
     image: chat,
     stack: [
       { name: "Websockets", iconType: Websocket },
@@ -72,7 +72,7 @@ const portfolioProjects = [
       { title: "Learned writing clean code" },
     ],
     description: "A blog app for super cars!",
-    link: "https://blog-website-car.netlify.app/",
+    link: "https://next-portfolio-qcgz.vercel.app/",
     image: portfolio,
     stack: [
       { name: "Typescript", iconType: typescript },
@@ -136,7 +136,7 @@ export const ProjectsSection = () => {
                   </ul>
                   <a href={project.link}>
                     <button className="bg-white inline-flex items-center gap-2 mt-8 justify-center text-gray-950 h-12 px-6 w-full md:w-auto rounded-xl font-semibold">
-                      <span>Visit Live Site</span>
+                      <span>See this Working</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
