@@ -39,7 +39,7 @@ export const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="p-7 flex flex-col items-center justify-center mb-10">
+    <section id="contact" className="p-16 flex flex-col items-center justify-center mb-10">
       <div className="mt-20 max-w-7xl">
         <SectionHeader eyebrow="Collaborate" title="Contact Me" description="Contact me for further collaborations!" />
         <Card className="border-2 md:flex border-white/10 mt-5">

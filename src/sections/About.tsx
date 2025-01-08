@@ -126,7 +126,7 @@ export const AboutSection = () => {
                   </div>
                 </div>
             </Card>
-            <Card className="border-2 flex flex-col md:flex-none h-[360px] col-span-2 border-white/10">
+            <Card className="border-2 flex flex-col mt-8 md:mt-0 md:flex-none h-[360px] col-span-2 border-white/10">
                 <div>
                   <div className="inline-flex items-center gap-2">
                     <StarIcon className="size-8 text-emerald-300"/>
