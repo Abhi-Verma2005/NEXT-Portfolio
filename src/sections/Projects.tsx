@@ -2,6 +2,7 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import Clustr from "@/assets/images/Clustr.png";
 import superCarBlog from "@/assets/images/super.png";
 import portfolio from "@/assets/images/portfolio.png";
+import SolEth from "@/assets/images/soleth.png";
 import chat from "@/assets/images/chatapp.png";
 import Image from "next/image";
 import React from "react";
@@ -15,6 +16,8 @@ import Websocket from "@/assets/icons/websocket.svg";
 import tailwind from "@/assets/icons/tailwind.svg";
 import typescript from "@/assets/icons/typescript.svg";
 import { TechIcon } from "@/components/TechIcon";
+import solana from "@/assets/icons/solana.svg"
+import ethereum from "@/assets/icons/ethereum.svg"
 
 const portfolioProjects = [
   {
@@ -46,6 +49,22 @@ const portfolioProjects = [
     stack: [
       { name: "Websockets", iconType: Websocket },
       { name: "Typescript", iconType: typescript },
+    ],
+  },
+  {
+    name: "SolEth Web3 Wallet",
+    year: "2025",
+    results: [
+      { title: "Learned public/private keys" },
+      { title: "Key generation" },
+      { title: "Mnemonic generation and Clean UI" },
+    ],
+    description: "A real time chat application",
+    link: "https://web-wallet-three-mu.vercel.app/",
+    image: SolEth,
+    stack: [
+      { name: "Solana", iconType: solana },
+      { name: "Ethereum", iconType: ethereum },
     ],
   },
   {
