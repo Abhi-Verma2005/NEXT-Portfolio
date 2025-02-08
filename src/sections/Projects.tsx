@@ -1,5 +1,5 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import Clustr from "@/assets/images/Clustr.png";
+import AlgoJourney from "@/assets/images/algoJourney.png";
 import superCarBlog from "@/assets/images/super.png";
 import portfolio from "@/assets/images/portfolio.png";
 import SolEth from "@/assets/images/soleth.png";
@@ -20,6 +20,21 @@ import solana from "@/assets/icons/solana.svg"
 import ethereum from "@/assets/icons/ethereum.svg"
 
 const portfolioProjects = [
+  {
+    name: "AlgoJourney",
+    year: "2025",
+    results: [
+      { title: "Learned NEXT.js" },
+      { title: "Prisma, Typescript" },
+    ],
+    description: "A social media app!",
+    link: "https://compet-y5yv.vercel.app/",
+    image: AlgoJourney,
+    stack: [
+      { name: "PostgreSQL", iconType: PostgreSQL },
+      { name: "NEXT.js", iconType: Next },
+    ],
+  },
   {
     name: "Clustr",
     year: "2024",
