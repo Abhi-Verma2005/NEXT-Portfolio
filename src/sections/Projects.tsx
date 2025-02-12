@@ -25,6 +25,7 @@ const portfolioProjects = [
     year: "2025",
     results: [
       { title: "Learned NEXT.js" },
+      { title: "Clean code" },
       { title: "Prisma, Typescript" },
     ],
     description: "A social media app!",
