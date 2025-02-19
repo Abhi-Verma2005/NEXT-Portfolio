@@ -29,7 +29,7 @@ const portfolioProjects = [
       { title: "Prisma, Typescript" },
     ],
     description: "A social media app!",
-    link: "https://compet-y5yv.vercel.app/",
+    link: "https://algo-journey-3siz.vercel.app/",
     image: AlgoJourney,
     stack: [
       { name: "PostgreSQL", iconType: PostgreSQL },
