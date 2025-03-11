@@ -32,7 +32,6 @@ const portfolioProjects = [
     link: "https://algo-journey-3siz.vercel.app/",
     image: AlgoJourney,
     stack: [
-      { name: "PostgreSQL", iconType: PostgreSQL },
       { name: "NEXT.js", iconType: Next },
     ],
   },
