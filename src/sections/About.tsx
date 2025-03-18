@@ -23,6 +23,8 @@ import linkedin from "@/assets/icons/linkedin.svg"
 import Websocket from "@/assets/icons/websocket.svg"
 import tailwind from "@/assets/icons/tailwind.svg"
 import typescript from "@/assets/icons/typescript.svg"
+import Docker from "@/assets/images/docker.svg"
+import Turbo from "@/assets/images/turborepo-seeklogo.svg"
 
 export const AboutSection = () => {
   // const languages = ["Html", "CSS", "Javascript", "React.js", "NEXT.js", "MongoDB", "PostgreSQL", "Prisma(ORM)", "AceternityUI", "DaisyUI", "Python", "ShadcnUI"]
@@ -30,6 +32,8 @@ export const AboutSection = () => {
     { name: "Html", iconType: Html  },
     { name: "CSS", iconType: CSS  },
     { name: "Javascript", iconType: Javascript  },
+    {name: "Docker", iconType: Docker},
+    {name: "TurboRepo", iconType: Turbo},
     { name: "React.js", iconType: React  },
     { name: "PostgreSQL", iconType: PostgreSQL  },
     { name: "Prisma", iconType: Prisma  },
@@ -40,11 +44,6 @@ export const AboutSection = () => {
     
   ]
 
-  const tech = [
-    { name: "Github", iconType: Github  },
-    { name: "LinkedIn", iconType: linkedin  },
-
-  ]
 
   const learnings = [
     { name: "Solana", iconType: solana  },
