@@ -73,7 +73,31 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+		keyframes:{
+			"move-left": {
+				"0%":{
+					transform: "translateX(0%)",
+				},
+				"100%":{
+					transform: "translateX(-50%)",
+				},
+				
+			},
+			"move-right": {
+				"0%":{
+					transform: "translateX(-50%)",
+				},
+				"100%":{
+					transform: "translateX(0%)",
+				},
+				
+			}
+		},
+		animation: {
+        "move-left": "move-left 30s linear infinite",
+        "move-right": "move-right 20s linear infinite"
+    }
   	}
   },
   plugins: [require("tailwindcss-animate")],

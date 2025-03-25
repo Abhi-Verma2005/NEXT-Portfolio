@@ -25,6 +25,7 @@ import tailwind from "@/assets/icons/tailwind.svg"
 import typescript from "@/assets/icons/typescript.svg"
 import Docker from "@/assets/images/docker.svg"
 import Turbo from "@/assets/images/turborepo-seeklogo.svg"
+import ToolBox from "@/components/ToolBox";
 
 export const AboutSection = () => {
   // const languages = ["Html", "CSS", "Javascript", "React.js", "NEXT.js", "MongoDB", "PostgreSQL", "Prisma(ORM)", "AceternityUI", "DaisyUI", "Python", "ShadcnUI"]
@@ -79,17 +80,8 @@ export const AboutSection = () => {
                     <p className="text-sm text-white/60">Explore my tool and tech stack I use to create Web Apps</p>
                 </div>
                 <div>
-                  {/* {[...new Array(2)].fill(0).map((_, index) => (
-                      <Fragment>
-                        
-                      </Fragment>
-                    ))} */}
-                  {languages.map((item) => ( // genera
-                    <div key={item.name} className="inline-flex gap-4 m-1 items-center py-2 px-3 border-2 border-white/10 rounded-lg"> 
-                      <TechIcon component={item.iconType}/>
-                      <span>{item.name}</span>
-                    </div>
-                  ))}
+                  <ToolBox languages={languages} className="mt-6" itemsWrapperClassName="animate-move-left [animation-duration:30s]"/>
+                  <ToolBox languages={languages} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:20s]"/>
                 </div>
             </Card>
             <Card className="border-2 flex flex-col col-span-3 md:flex-none h-[360px] border-white/10">
