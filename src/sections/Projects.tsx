@@ -10,7 +10,6 @@ import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Reactt from "@/assets/icons/react.svg";
 import PostgreSQL from "@/assets/icons/postgresql.svg";
-import Prisma from "@/assets/icons/Prisma.svg";
 import Next from "@/assets/icons/icons8-nextjs.svg";
 import Websocket from "@/assets/icons/websocket.svg";
 import tailwind from "@/assets/icons/tailwind.svg";
@@ -59,7 +58,7 @@ const portfolioProjects = [
       { title: "Github 3D globe using AceternityUI" },
     ],
     description: "A real time chat application",
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7279800412541538304/",
+    link: "https://frontend-chat-app-on7h.vercel.app/",
     image: chat,
     stack: [
       { name: "Websockets", iconType: Websocket },
