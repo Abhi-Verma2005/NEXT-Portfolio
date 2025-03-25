@@ -10,13 +10,14 @@ import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Reactt from "@/assets/icons/react.svg";
 import PostgreSQL from "@/assets/icons/postgresql.svg";
+import Prisma from "@/assets/icons/Prisma.svg";
 import Next from "@/assets/icons/icons8-nextjs.svg";
 import Websocket from "@/assets/icons/websocket.svg";
 import tailwind from "@/assets/icons/tailwind.svg";
 import typescript from "@/assets/icons/typescript.svg";
-import { TechIcon } from "@/components/TechIcon";
 import solana from "@/assets/icons/solana.svg"
 import ethereum from "@/assets/icons/ethereum.svg"
+import ToolBox from "@/components/ToolBox";
 
 const portfolioProjects = [
   {
@@ -32,6 +33,10 @@ const portfolioProjects = [
     image: AlgoJourney,
     stack: [
       { name: "NEXT.js", iconType: Next },
+      { name: "WebSockets", iconType: Websocket },
+      { name: "TypeScript", iconType: typescript },
+      { name: "PostgreSql", iconType: PostgreSQL },
+      { name: "Prisma", iconType: Prisma },
     ],
   },
   {
@@ -46,7 +51,9 @@ const portfolioProjects = [
     image: Clustr,
     stack: [
       { name: "PostgreSQL", iconType: PostgreSQL },
+      { name: "Prisma", iconType: Prisma },
       { name: "NEXT.js", iconType: Next },
+      { name: "TypeScript", iconType: typescript },
     ],
   },
   {
@@ -61,6 +68,7 @@ const portfolioProjects = [
     link: "https://frontend-chat-app-on7h.vercel.app/",
     image: chat,
     stack: [
+      { name: "React.js", iconType: Reactt },
       { name: "Websockets", iconType: Websocket },
       { name: "Typescript", iconType: typescript },
     ],
@@ -78,6 +86,7 @@ const portfolioProjects = [
     image: SolEth,
     stack: [
       { name: "Solana", iconType: solana },
+      { name: "Typescript", iconType: typescript },
       { name: "Ethereum", iconType: ethereum },
     ],
   },
@@ -142,21 +151,18 @@ export const ProjectsSection = () => {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 bg-clip-text text-transparent p-8">
-                    <span>{project.name}</span>
-                    <span>&bull;</span>
-                    <span>{project.year}</span>
+                  <h3 className="m-1 font-serif md:text-4xl md:mt-5 text-2xl mt-2">
+                      {project.name}
+                    </h3>
+                    <span className="flex items-center">&bull;</span>
+                    <span className="flex items-center">{project.year}</span>
                   </div>
 
                   <div className="md:flex">
-                    <h3 className="m-1 font-serif md:text-4xl md:mt-5 text-2xl mt-2">
-                      {project.name}
-                    </h3>
-                    {project.stack.map((item) => (
-                      <div key={item.name} className="inline-flex gap-4 m-1 items-center py-2 px-3 border-2 border-white/10 rounded-lg">
-                        <TechIcon component={item.iconType} />
-                        <span>{item.name}</span>
-                      </div>
-                    ))}
+                   
+                    <div>
+                    <ToolBox languages={project.stack} className="px-4" itemsWrapperClassName="animate-move-right [animation-duration:20s]"/>
+                    </div>
                   </div>
                   <hr className="border-t-2 border-white/5 mt-4" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
