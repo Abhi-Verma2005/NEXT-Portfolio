@@ -21,6 +21,7 @@ import ToolBox from "@/components/ToolBox";
 import mongo from "@/assets/icons/mongo.svg";
 import node from "@/assets/icons/node.svg";
 import express from "@/assets/icons/express.svg";
+import Link from "next/link";
 const portfolioProjects = [
   {
     name: "AlgoJourney",
@@ -181,12 +182,12 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <Link href={project.link} target="_blank">
                     <button className="bg-white inline-flex items-center gap-2 mt-8 justify-center text-gray-950 h-12 px-6 w-full md:w-auto rounded-xl font-semibold">
                       <span>See this Working</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
-                  </a>
+                  </Link>
                 </div>
                 <div className="relative">
                   <Image
