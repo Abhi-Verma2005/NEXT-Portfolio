@@ -1,41 +1,18 @@
-import mac from "@/assets/images/macbookpro.png";
-import WorldMap from "@/components/ui/world-map";
-import { WorldMapDemo } from "@/components/world";
 import { TechIcon } from "@/components/TechIcon";
-import Html from "@/assets/icons/html5.svg";
-import CSS from "@/assets/icons/css3.svg";
-import Javascript from "@/assets/icons/square-js.svg";
 import React from "@/assets/icons/react.svg";
-import Github from "@/assets/icons/github.svg";
-import Chrome from "@/assets/icons/chrome.svg";
-import Next from "@/assets/icons/icons8-nextjs.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import StarIcon from "@/assets/icons/star.svg";
-import PostgreSQL from "@/assets/icons/postgresql.svg";
-import Prisma from "@/assets/icons/Prisma.svg";
-import Image from "next/image";
-import pfp from "@/assets/images/book.webp";
-import newton from "@/assets/images/newton.webp";
-import map from "@/assets/images/map.png";
-import solana from "@/assets/icons/solana.svg";
-import ethereum from "@/assets/icons/ethereum.svg";
-import webrtc from "@/assets/icons/webrtc.svg";
-import linkedin from "@/assets/icons/linkedin.svg";
-import Websocket from "@/assets/icons/websocket.svg";
-import tailwind from "@/assets/icons/tailwind.svg";
-import typescript from "@/assets/icons/typescript.svg";
 import mongo from "@/assets/icons/mongo.svg";
 import node from "@/assets/icons/node.svg";
 import express from "@/assets/icons/express.svg";
-import { Fragment } from "react";
 
 export const ContactSection = () => {
   const languages = [
     { name: "MongoDB", iconType: mongo },
     { name: "Express.js", iconType: express },
-    { name: "React.js", iconType: React },
     { name: "Node.js", iconType: node },
+    { name: "React.js", iconType: React },
   ];
 
   return (

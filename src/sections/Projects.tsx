@@ -18,7 +18,9 @@ import typescript from "@/assets/icons/typescript.svg";
 import solana from "@/assets/icons/solana.svg"
 import ethereum from "@/assets/icons/ethereum.svg"
 import ToolBox from "@/components/ToolBox";
-
+import mongo from "@/assets/icons/mongo.svg";
+import node from "@/assets/icons/node.svg";
+import express from "@/assets/icons/express.svg";
 const portfolioProjects = [
   {
     name: "AlgoJourney",
@@ -71,6 +73,9 @@ const portfolioProjects = [
       { name: "React.js", iconType: Reactt },
       { name: "Websockets", iconType: Websocket },
       { name: "Typescript", iconType: typescript },
+      { name: "MongoDB", iconType: mongo },
+      { name: "Express.js", iconType: express },
+      { name: "Node.js", iconType: node },
     ],
   },
   {
@@ -104,6 +109,9 @@ const portfolioProjects = [
     stack: [
       { name: "React.js", iconType: Reactt },
       { name: "Tailwind", iconType: tailwind },
+      { name: "MongoDB", iconType: mongo },
+      { name: "Express.js", iconType: express },
+      { name: "Node.js", iconType: node },
     ],
   },
   {
