@@ -41,7 +41,7 @@ export const HeroSection = () => {
               <span className="font-semibold">Explore My Work</span>
               <ArrowDown className="size-4" />
             </a>
-            <a href="#about" className="z-40 inline-flex items-center border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+            <a href="#contact" className="z-40 inline-flex items-center border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
               <span>👋</span>
               <span className="font-semibold">Let&apos;s Connect</span>
             </a>
