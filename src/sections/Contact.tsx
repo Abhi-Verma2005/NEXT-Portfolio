@@ -11,8 +11,8 @@ export const ContactSection = () => {
   const languages = [
     { name: "MongoDB", iconType: mongo },
     { name: "Express.js", iconType: express },
-    { name: "Node.js", iconType: node },
     { name: "React.js", iconType: React },
+    { name: "Node.js", iconType: node },
   ];
 
   return (
