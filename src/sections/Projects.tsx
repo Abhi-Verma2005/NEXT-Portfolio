@@ -19,6 +19,7 @@ import solana from "@/assets/icons/solana.svg"
 import ethereum from "@/assets/icons/ethereum.svg"
 import ToolBox from "@/components/ToolBox";
 import mongo from "@/assets/icons/mongo.svg";
+import metrics from "@/assets/images/metrics.png"
 import node from "@/assets/icons/node.svg";
 import express from "@/assets/icons/express.svg";
 import Link from "next/link";
@@ -37,6 +38,24 @@ const portfolioProjects = [
     stack: [
       { name: "NEXT.js", iconType: Next },
       { name: "WebSockets", iconType: Websocket },
+      { name: "TypeScript", iconType: typescript },
+      { name: "PostgreSql", iconType: PostgreSQL },
+      { name: "Prisma", iconType: Prisma },
+    ],
+  },
+  {
+    name: "MetricsIQ",
+    year: "2025",
+    results: [
+      { title: "Hackathon 3rd place ranker website" },
+      { title: "built in 24 hours" },
+      { title: "Nextjs, Prisma, Typescript" },
+    ],
+    description: "A health advisor website app!",
+    link: "https://metrics-iq.vercel.app",
+    image: metrics,
+    stack: [
+      { name: "NEXT.js", iconType: Next },
       { name: "TypeScript", iconType: typescript },
       { name: "PostgreSql", iconType: PostgreSQL },
       { name: "Prisma", iconType: Prisma },
