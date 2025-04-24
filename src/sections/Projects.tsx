@@ -22,6 +22,7 @@ import mongo from "@/assets/icons/mongo.svg";
 import metrics from "@/assets/images/metrics.png"
 import node from "@/assets/icons/node.svg";
 import express from "@/assets/icons/express.svg";
+import jugg from "@/assets/images/juggernaut.png"
 import Link from "next/link";
 const portfolioProjects = [
   {
@@ -59,6 +60,22 @@ const portfolioProjects = [
       { name: "TypeScript", iconType: typescript },
       { name: "PostgreSql", iconType: PostgreSQL },
       { name: "Prisma", iconType: Prisma },
+    ],
+  },
+  {
+    name: "JuggernautAI",
+    year: "2025",
+    results: [
+      { title: "Hackathon 1st place ranker website" },
+      { title: "built in 12 hours" },
+      { title: "Nextjs, Prisma, Typescript" },
+    ],
+    description: "A legal advisor website app!",
+    link: "https://juggernaut-rouge.vercel.app/",
+    image: jugg,
+    stack: [
+      { name: "NEXT.js", iconType: Next },
+      { name: "TypeScript", iconType: typescript },
     ],
   },
   {

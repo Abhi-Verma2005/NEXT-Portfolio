@@ -26,6 +26,7 @@ import typescript from "@/assets/icons/typescript.svg"
 import Docker from "@/assets/images/docker.svg"
 import Turbo from "@/assets/images/turborepo-seeklogo.svg"
 import ToolBox from "@/components/ToolBox";
+import { useEffect } from "react";
 
 export const AboutSection = () => {
   // const languages = ["Html", "CSS", "Javascript", "React.js", "NEXT.js", "MongoDB", "PostgreSQL", "Prisma(ORM)", "AceternityUI", "DaisyUI", "Python", "ShadcnUI"]
@@ -44,6 +45,7 @@ export const AboutSection = () => {
     { name: "Tailwind", iconType: tailwind  },
     
   ]
+
 
 
   const learnings = [
