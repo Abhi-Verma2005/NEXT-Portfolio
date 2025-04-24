@@ -63,7 +63,7 @@ const portfolioProjects = [
     ],
   },
   {
-    name: "JuggernautAI",
+    name: "Juggernaut-AI",
     year: "2025",
     results: [
       { title: "Hackathon 1st place ranker website" },
