@@ -26,7 +26,8 @@ import typescript from "@/assets/icons/typescript.svg"
 import Docker from "@/assets/images/docker.svg"
 import Turbo from "@/assets/images/turborepo-seeklogo.svg"
 import ToolBox from "@/components/ToolBox";
-import { useEffect } from "react";
+import Rust from "@/assets/images/rust.svg"
+import Solidity from "@/assets/images/solidity.svg"
 
 export const AboutSection = () => {
   // const languages = ["Html", "CSS", "Javascript", "React.js", "NEXT.js", "MongoDB", "PostgreSQL", "Prisma(ORM)", "AceternityUI", "DaisyUI", "Python", "ShadcnUI"]
@@ -43,6 +44,8 @@ export const AboutSection = () => {
     { name: "Websockets", iconType: Websocket  },
     { name: "Typescript", iconType: typescript  },
     { name: "Tailwind", iconType: tailwind  },
+    { name: "Rust", iconType: Rust  },
+    { name: "Solidity", iconType: Solidity  },
     
   ]
 
