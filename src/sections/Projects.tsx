@@ -19,6 +19,7 @@ import solana from "@/assets/icons/solana.svg"
 import ethereum from "@/assets/icons/ethereum.svg"
 import ToolBox from "@/components/ToolBox";
 import mongo from "@/assets/icons/mongo.svg";
+import toptier from "@/assets/images/toptier.png";
 import metrics from "@/assets/images/metrics.png"
 import node from "@/assets/icons/node.svg";
 import express from "@/assets/icons/express.svg";
@@ -33,12 +34,30 @@ const portfolioProjects = [
       { title: "Clean code" },
       { title: "Prisma, Typescript" },
     ],
-    description: "A social media app!",
+    description: "A contest platform for students",
     link: "https://algo-journey-3siz.vercel.app/",
     image: AlgoJourney,
     stack: [
       { name: "NEXT.js", iconType: Next },
       { name: "WebSockets", iconType: Websocket },
+      { name: "TypeScript", iconType: typescript },
+      { name: "PostgreSql", iconType: PostgreSQL },
+      { name: "Prisma", iconType: Prisma },
+    ],
+  },
+  {
+    name: "TopTier",
+    year: "2025",
+    results: [
+      { title: "Implemented Ai usage" },
+      { title: "Repo scraping using AI" },
+      { title: "Prisma, Typescript" },
+    ],
+    description: "Repo rating system using AI",
+    link: "https://top-tier-seven.vercel.app/",
+    image: AlgoJourney,
+    stack: [
+      { name: "NEXT.js", iconType: Next },
       { name: "TypeScript", iconType: typescript },
       { name: "PostgreSql", iconType: PostgreSQL },
       { name: "Prisma", iconType: Prisma },
