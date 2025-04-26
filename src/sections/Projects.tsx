@@ -142,32 +142,13 @@ const portfolioProjects = [
       { title: "Key generation" },
       { title: "Mnemonic generation and Clean UI" },
     ],
-    description: "A real time chat application",
+    description: "A wallet",
     link: "https://web-wallet-three-mu.vercel.app/",
     image: SolEth,
     stack: [
       { name: "Solana", iconType: solana },
       { name: "Typescript", iconType: typescript },
       { name: "Ethereum", iconType: ethereum },
-    ],
-  },
-  {
-    name: "CarBlog",
-    year: "2024",
-    results: [
-      { title: "Learned React.js" },
-      { title: "Image uploads, Post making, auth" },
-      { title: "Multiple themes using DaisyUi" },
-    ],
-    description: "A blog app for super cars!",
-    link: "https://blog-website-car.netlify.app/",
-    image: superCarBlog,
-    stack: [
-      { name: "React.js", iconType: Reactt },
-      { name: "Tailwind", iconType: tailwind },
-      { name: "MongoDB", iconType: mongo },
-      { name: "Express.js", iconType: express },
-      { name: "Node.js", iconType: node },
     ],
   },
   {
