@@ -55,7 +55,7 @@ const portfolioProjects = [
     ],
     description: "Repo rating system using AI",
     link: "https://top-tier-seven.vercel.app/",
-    image: AlgoJourney,
+    image: toptier,
     stack: [
       { name: "NEXT.js", iconType: Next },
       { name: "TypeScript", iconType: typescript },
